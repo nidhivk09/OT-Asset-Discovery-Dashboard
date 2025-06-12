@@ -1,0 +1,174 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* enables side-by-side layout */
+}
+
+.navbar {
+    position: fixed; /* make it static on scroll */
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-right: 0.5px solid #ccc;
+    box-shadow: 1px 0 1px rgba(0,0,0,0.1);
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 40px; /* Added spacing below title */
+}
+
+.main-content {
+    margin-left: 200px;
+    padding: 40px 60px;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+
+.main-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.main-content h2 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+    text-align: center; /* center text horizontally */
+    width: 100%; /* ensures full width for centering */
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center content inside container */
+    margin-top: 30px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px; /* space between input and button */
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px; /* space between input and button */
+}
+
+#subnet-input {
+    font-family: "Poppins", sans-serif;
+    width: 300px;
+    border-radius: 18px;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+
+
+#scan-btn:hover {
+    background-color: #1e7e34;
+}
+
+
+
+
+#scan-btn {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#scan-btn:hover {
+    background-color: #1e7e34;
+}
+
+
+#subnet-input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    width:300px;
+    border-radius:18px;
+    padding:5px;
+    border-width: 2px;
+}
+
+
+
+.network-graph-btn {
+    margin-top: 0px; /* Since .title now has margin-bottom */
+    margin-bottom: 15px; /* Space before the next button */
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.network-graph-btn:hover {
+    background-color: #0056b3;
+}
+
+.download-log-btn {
+    margin-top: 0px; /* Removes stacking space conflict */
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.download-log-btn:hover {
+    background-color: #0056b3;
+}
+
+table {
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #ccc;
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fafafa;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+th {
+    background-color: #28a745;
+    color: white;
+}
