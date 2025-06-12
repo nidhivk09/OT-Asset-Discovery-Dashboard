@@ -1,0 +1,7 @@
+requests
+scapy
+get-mac
+ipwhois
+netaddr
+mac-vendor-lookup
+rich
