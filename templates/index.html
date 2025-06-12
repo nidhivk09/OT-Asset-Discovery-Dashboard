@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OT Security Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="navbar">
+        <div class="title">
+            OT Security Dashboard
+        </div>
+
+        <div class="network-graph-btn">
+            Generate Network Graph
+        </div>
+        <div class="download-log-btn">
+            Download Log Report
+        </div>
+    </section>
+
+    <section class="main-content">
+        <h1>Welcome to the Dashboard</h1>
+        <div class="input-container">
+            <h2 class="input-title">Please enter the target subnet address:</h2>
+            <div class="input-row">
+                <input id="subnet-input" placeholder="Enter subnet address (e.g. 172.10.2.1/24)">
+                <button id ="scan-btn">Scan</button>
+            </div>
+        </div>
+
+
+        <div id="scan-status"></div>
+        <div id="scan-results"></div>
+
+
+
+
+    </section>
+</body>
+</html>
